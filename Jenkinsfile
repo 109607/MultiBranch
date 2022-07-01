@@ -7,6 +7,14 @@ pipeline{
       }
 
     }
+    stage('Condition'){
+    when {
+      branch "main"
+    }
+    steps{
+     sh "cat README.md"
+    }
 
+    }
   }
 }
