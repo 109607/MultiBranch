@@ -11,7 +11,7 @@ pipeline{
     stage('hello'){
       steps{
 	script {
-        version(1.2.3)
+        version("1.2.3")
         sh 'echo Hello World'
       }
       }
